@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="534.32" Width="525" Background="Bisque">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Webdings"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="Red"></Setter>
+         </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Webdings"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="Red"></Setter>
+            <Setter Property="Background" Value="Gold"></Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         
+        <StackPanel Margin="10,10,10,10" Orientation="Vertical">
+            <TextBlock Height="32">Title</TextBlock>
+            <TextBox Name="titleInput" Margin="0,0,0,15"></TextBox>
+            <TextBlock Height="32">Release Year</TextBlock>
+            <TextBox Name="releaseYearInput" Margin="0,0,0,15"></TextBox>
+            <TextBlock Height="32">Director </TextBlock>
+            <TextBox Name="directorInput" Margin="0,0,0,15"></TextBox>
+            <TextBlock Height="32"> Length</TextBlock>
+            <TextBox Name="lengthInput" Margin="0,0,0,15"></TextBox>
+            <TextBlock Height="32">Genre</TextBlock>
+            <TextBox Name="genreInput" Margin="0,0,0,15"></TextBox>
+            <Button Margin=" 0,0,0,10" HorizontalAlignment="Center" Click="AddButton_Click">Add</Button>
+            <Button Margin="219,0,219,10" HorizontalAlignment="Center" Click="ShowButton_Click" Content="All Movies"/>
+
+        </StackPanel>
     </Grid>
 </Window>
