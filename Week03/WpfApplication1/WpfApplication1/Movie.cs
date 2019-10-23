@@ -10,20 +10,22 @@ namespace WpfApplication1
     public class Movie
     {
 
-        public string Title;
-        public int ReleaseYear;
-        public string Director;
-        public string Length;
-        public string Genre;
+        public string Title { get; set; }
+        public int ReleaseYear{ get; set; }
+        public string Director { get; set; }
+        public string Length { get; set; }
+        public string Genre { get; set; }
+        public double RottenTomatoesScore { get; set; }
 
 
-        public Movie(string title, int releaseyear, string director, string length, string genre)
+        public Movie(string title, int releaseyear, string director, string length, string genre, double rottentomatoesscore)
         {
             Title = title;
             ReleaseYear = releaseyear;
             Director = director;
             Length = length;
             Genre = genre;
+            RottenTomatoesScore = rottentomatoesscore;
 
         }
 

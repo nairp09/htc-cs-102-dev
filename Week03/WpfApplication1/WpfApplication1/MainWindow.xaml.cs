@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,10 +21,11 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Movie> Movies = new List<Movie>();
+      ObservableCollection<Movie> Movies = new ObservableCollection<Movie>();
         public MainWindow()
         {
             InitializeComponent();
+            lvMovies.ItemsSource = Movies;
         }
 
         private void ShowButton_Click(object sender, RoutedEventArgs e)
@@ -41,10 +43,39 @@ namespace WpfApplication1
             string director = directorInput.Text;
             string genre = genreInput.Text;
             string length = lengthInput.Text;
+            double rottentomatoesscore = Convert.ToDouble(rottenInput.Text);
 
-            Movie movie = new Movie(title, releaseYear, director,length,genre);
+
+            Movie movie = new Movie(title, releaseYear, director,length,genre, rottentomatoesscore);
             Movies.Add(movie);
             MessageBox.Show("Movie was added!");
+        }
+
+        private void lvMovies_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            
+            Movie selectedMovie = lvMovies.SelectedItem as Movie;
+           
+            foreach (Movie item in Movies)
+            {
+                if (Movies.Count == 0)
+                {
+                    selectedMovie.ShowDetails();
+
+
+                } else if (Title == item.Title)
+                {
+                    MessageBox.Show("This movie was already added");
+
+                }
+
+            }
+                
+                
+                 
+                
+            
+                       
         }
     }
 }
