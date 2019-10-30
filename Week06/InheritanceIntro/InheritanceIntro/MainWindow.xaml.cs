@@ -49,6 +49,40 @@ namespace InheritanceIntro
             {
                 d.SayName();
             }
+
+            Duck duck1 = new Duck(9, "Kyle");
+            duck1.SayName();
+
+            Frog frog1 = new Frog(20, "Max", "poisionous");
+            frog1.SayName();
+            Cow Cow1 = new Cow(9, "Hunt");
+            Cow1.SayName();
+            Tree tree1 = new Tree("XYXYYXYXYXY");
+
+
+
+
+
         }
+
+        private void QuackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Duck duck = new Duck();
+            duck.Quack();
+        }
+
+        private void RibbitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frog frog = new InheritanceIntro.Frog();
+            frog.Ribbit();
+        }
+
+        private void MooButton_Click(object sender, RoutedEventArgs e)
+        {
+            Cow cow = new Cow();
+            cow.Moo();
+        }
+
+        
     }
 }
