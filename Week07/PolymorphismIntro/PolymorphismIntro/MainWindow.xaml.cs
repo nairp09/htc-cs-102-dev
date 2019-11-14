@@ -30,10 +30,10 @@ namespace PolymorphismIntro
             List<Animal> animals = new List<Animal>();
 
             // Instantiate some dog objects
-            Dog dog1 = new dog("Muppet", 20, "Rolf");
-            Dog dog2 = new Dog("Golden Retriever", 30, "Air Bud");
-            Duck duck1 = new Duck(9, "Donald");
-            Frog frog1 = new Frog(4, "Kermit", false);
+            Dog dog1 = new Dog("Muppet", 20, "Rolf",50);
+            Dog dog2 = new Dog("Golden Retriever", 30, "Air Bud",80);
+            Duck duck1 = new Duck(9, "Donald",90);
+            Frog frog1 = new Frog(4, "Kermit", false,100);
 
             // Add the dogs to the list
             Animals.Add(dog1);
