@@ -20,7 +20,11 @@ namespace PolymorphismIntro
             get;
             set;
         }
-
+        public int Weight
+        {
+            get;
+            set;
+        }
         public void SayName()
         {
             MessageBox.Show("My name is " + Name);

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InheritanceIntro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="300">
+        Title="MainWindow" Height="650" Width="397.271">
     <StackPanel>
         <StackPanel>
             <ListView Name="lvAnimals" Height="150px" Margin="0,0,0,10" 
@@ -17,6 +17,9 @@
                         </GridViewColumn>
                         <GridViewColumn Width="100" Header="Height" DisplayMemberBinding="{Binding Height}">
                             
+                        </GridViewColumn>
+                        <GridViewColumn Width="100" Header="Weight" DisplayMemberBinding="{Binding Weight}">
+
                         </GridViewColumn>
                     </GridView>
                 </ListView.View>

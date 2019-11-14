@@ -30,7 +30,7 @@ namespace PolymorphismIntro
             List<Animal> animals = new List<Animal>();
 
             // Instantiate some dog objects
-            Dog dog1 = new Dog("Muppet", 20, "Rolf");
+            Dog dog1 = new dog("Muppet", 20, "Rolf");
             Dog dog2 = new Dog("Golden Retriever", 30, "Air Bud");
             Duck duck1 = new Duck(9, "Donald");
             Frog frog1 = new Frog(4, "Kermit", false);

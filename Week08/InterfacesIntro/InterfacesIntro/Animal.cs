@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfacesIntro;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Windows;
 
 namespace InheritanceIntro
 {
-    public class Animal
+    public class Animal : Ispeaker
     {
         public int Height
         {

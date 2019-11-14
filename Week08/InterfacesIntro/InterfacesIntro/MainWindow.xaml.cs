@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InterfacesIntro;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -21,12 +22,12 @@ namespace InheritanceIntro
     /// </summary>
     public partial class MainWindow : Window
     {
-        public ObservableCollection<Animal> Animals;
+        public ObservableCollection<Ispeaker> Speakers;
 
         public MainWindow()
         {
             InitializeComponent();
-            Animals = new ObservableCollection<Animal>();
+            Speakers = new ObservableCollection<Ispeaker>();
 
             // Define some animals
             Frog frog = new Frog(4, "Kermit", false);
@@ -34,28 +35,31 @@ namespace InheritanceIntro
             Duck duck = new Duck(9, "Donald");
 
             // Add the animals to the list
-            Animals.Add(frog);
-            Animals.Add(dog);
-            Animals.Add(duck);
+            Speakers.Add(frog);
+            Speakers.Add(dog);
+            Speakers.Add(duck);
 
-            lvAnimals.ItemsSource = Animals;
+            Robot robot = new Robot("Mike", 2555);
+            Speakers.Add(robot);
+
+            lvSpeakers.ItemsSource = Speakers;
         }
 
-        private void lvAnimals_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void lvSpeakers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Animal selectedAnimal = lvAnimals.SelectedItem as Animal;
-            if (selectedAnimal != null)
+            Ispeaker selectedSpeaker = lvSpeakers.SelectedItem as Ispeaker;
+            if (selectedSpeaker != null)
             {
-                selectedAnimal.Speak();
+                selectedSpeaker.Speak();
             }
         }
 
         private void SayName_Button_Click(object sender, RoutedEventArgs e)
         {
             // Loop through the list and call a method on the objects
-            foreach (Animal a in Animals)
+            foreach (Ispeaker s in Speakers)
             {
-                a.SayName();
+                s.SayName();
             }
         }
     }

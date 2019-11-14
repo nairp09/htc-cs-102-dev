@@ -16,10 +16,11 @@ namespace PolymorphismIntro
 
         public Duck() { }
 
-        public Duck(int height, string name)
+        public Duck(int height, string name, int weight)
         {
             this.Height = height;
             this.Name = name;
+            this.Weight = weight;
         }
 
         public override void Speak()
