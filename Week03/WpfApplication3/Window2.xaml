@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApplication3.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="Window2" Height="386.982" Width="469.527">
+    <Grid>
+        <Image x:Name="Image7_png" Margin="0,0,0,10" Source="Image7.png" Stretch="Fill"/>
+        <Image x:Name="Image8_png" Margin="67,136,314,144" Source="Image8.png" Stretch="Fill"/>
+        <Image x:Name="Image9_png" Margin="191,136,189,144" Source="Image9.png" Stretch="Fill"/>
+    </Grid>
+</Window>
