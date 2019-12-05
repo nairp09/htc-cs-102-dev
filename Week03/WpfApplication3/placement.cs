@@ -8,10 +8,10 @@ namespace WpfApplication3
 {
     class placement
     {
-        //how each item moves
+        void MakeMove()
+        {
 
-
-
+        }
 
 
 

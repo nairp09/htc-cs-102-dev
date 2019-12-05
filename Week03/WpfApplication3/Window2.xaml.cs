@@ -24,6 +24,9 @@ namespace WpfApplication3
             InitializeComponent();
         }
 
-        
+        private void Image15_png_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            ColumnOne
+        }
     }
 }
