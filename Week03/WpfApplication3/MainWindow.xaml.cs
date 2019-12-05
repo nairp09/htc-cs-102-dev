@@ -27,7 +27,7 @@ namespace WpfApplication3
 
 
         // when the user clicks on the play game button it goes to window 2 with the game
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs z)
         {
             Window2 win2 = new Window2();
             win2.Show();
