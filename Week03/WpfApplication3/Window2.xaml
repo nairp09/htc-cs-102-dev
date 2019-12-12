@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication3"
         mc:Ignorable="d"
         Title="Window2" Height="637.719" Width="554.251">
-    <Grid Margin="0,0,0,-2">
+    <Grid Margin="0,0,0,-2" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Name="ColumnOne" Width="1*" />
             <ColumnDefinition Width="1*" />
@@ -34,7 +34,7 @@
         <Image x:Name="Image23_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="0" Grid.Row="2" Margin="10,10,9,10" Visibility="Hidden"></Image>
         <Image x:Name="Image24_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="0" Grid.Row="1" Margin="10,10,9,10" Visibility="Hidden"></Image>
         <Image x:Name="Image25_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="0" Grid.Row="0" Margin="10,10,9,10" Visibility="Hidden"></Image>
-        <Image x:Name="Image26_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="2" Grid.Row="2" Margin="10,10,9,10" Visibility="Hidden"></Image>
+        <Image x:Name="Image26_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="2" Grid.Row="2" Margin="10,10,9,10" Visibility="Hidden"/>
         <Image x:Name="Image27_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="2" Grid.Row="1" Margin="10,10,9,10" Visibility="Hidden"></Image>
         <Image x:Name="Image28_png" Grid.ColumnSpan="1" Grid.RowSpan="1" Source="Image2.png" Stretch="UniformToFill" Grid.Column="2" Grid.Row="0" Margin="10,10,9,10" Visibility="Hidden"></Image>
         <Image  Grid.Column="1" Grid.Row="2"></Image>
