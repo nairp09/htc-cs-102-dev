@@ -6,14 +6,6 @@ using System.Threading.Tasks;
 
 namespace WpfApplication3
 {
-    class Shape
-    {
-        
-
-
-
-
-
-
-    }
 }
+
+  
